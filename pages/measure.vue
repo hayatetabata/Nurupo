@@ -10,8 +10,7 @@
         v-img(v-if="isCounting" src="/nurupo_blank.png" width="300px" height="300px")
         v-img(v-if="!isCounting" src="/nurupo.jpg" width="300px" height="300px")
 
-        v-btn(v-if="isCounting" disable) ガッ！
-        v-btn(v-else v-on:click="stopTimer()") ガッ！
+        v-btn(v-on:click="stopTimer()") ガッ！
 </template>
 
 <style>
@@ -52,6 +51,10 @@ export default {
   },
   methods: {
     stopTimer: function () {
+      if (this.isCounting) {
+        this.$router.push('/failure')
+        return;
+      }
       this.endTime = Date.now()
       this.isStop = true
       var visibleFrame =  (this.endTime - this.startTime)/15
