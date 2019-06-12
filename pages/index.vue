@@ -4,7 +4,7 @@
       div.text-xs-center.section
         div 何秒で反応できる？
         div ぬるぽスピード計測ツール
-        div.headline Nurupoメーター
+        div.headline ぬるぽメーター
 
         v-btn(to="/howtouse") 計測する
 
