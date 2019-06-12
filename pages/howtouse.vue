@@ -2,10 +2,10 @@
   v-layout(column justify-center align-center)
     v-flex(xs12 sm8 md6)
       div.text-xs-center.section
-        div 赤いスマッシュロゴが見えたら
-        v-img(src="/smashball.png")
-        div 下のPushボタンを押そう！
-        v-btn() Push!
+        div ぬるぽが見えたら
+        v-img(src="/nurupo.jpg")
+        div 下の「ガッ」ボタンを押そう！
+        v-btn() ガッ！
 
         v-btn(to="/measure") ルールがわかったので計測をする
 </template>

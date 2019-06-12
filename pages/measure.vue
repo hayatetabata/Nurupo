@@ -7,11 +7,11 @@
             span(slot="process" slot-scope="{ timeObj }") {{ timeObj.s}}
             span(slot="finish") 計測中......
 
-        v-img(v-if="isCounting" src="/smashball_blank.png" width="300px" height="300px")
-        v-img(v-if="!isCounting" src="/smashball.png" width="300px" height="300px")
+        v-img(v-if="isCounting" src="/nurupo_blank.png" width="300px" height="300px")
+        v-img(v-if="!isCounting" src="/nurupo.jpg" width="300px" height="300px")
 
-        v-btn(v-if="isCounting" disable) Push!
-        v-btn(v-else v-on:click="stopTimer()") Push!
+        v-btn(v-if="isCounting" disable) ガッ！
+        v-btn(v-else v-on:click="stopTimer()") ガッ！
 </template>
 
 <style>

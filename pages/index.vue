@@ -2,9 +2,9 @@
   v-layout(column justify-center align-center)
     v-flex(xs12 sm8 md6)
       div.text-xs-center.section
-        div 何フレームまで反応できる？
-        div 視認可能フレーム計測ツール
-        div.headline FrameMeasure
+        div 何秒で反応できる？
+        div ぬるぽスピード計測ツール
+        div.headline Nurupoメーター
 
         v-btn(to="/howtouse") 計測する
 
